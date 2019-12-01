@@ -1,0 +1,7 @@
+Flask
+flask_restful
+flask_login
+Flask-SQLAlchemy
+mysql-connector
+bcrypt
+passlib

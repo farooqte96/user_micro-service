@@ -1,0 +1,15 @@
+version: '3'
+
+services:
+  customer:
+    build: ./customer
+    ports:
+      - "5000:5000"
+    links:
+      - db
+
+  db:
+    image: mysql:5.7.22
+    environment:
+      - MYSQL_ROOT_PASSWORD=test
+      - MYSQL_DATABASE=customer
